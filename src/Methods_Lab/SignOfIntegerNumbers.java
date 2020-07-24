@@ -3,21 +3,18 @@ package Methods_Lab;
 import java.util.Scanner;
 
 public class SignOfIntegerNumbers {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int number = Integer.parseInt(scanner.nextLine());
-        printSign(number);
+        printNumberSign(Integer.parseInt(scanner.nextLine()));
     }
 
-    public static void printSign(int num) {
-        String sign = "zero";
-        if (num > 0) {
-            sign = "positive";
-        } else if (num < 0) {
-           sign = "negative";
+    private static void printNumberSign(int number) {
+        if (number > 0) {
+            System.out.printf("The number %d is positive.", number);
+        } else if (number < 0) {
+            System.out.printf("The number %d is negative.", number);
+        } else {
+            System.out.printf("The number %d is zero.", number);
         }
-
-        System.out.printf("The number %d is %s.", num, sign);
     }
 }

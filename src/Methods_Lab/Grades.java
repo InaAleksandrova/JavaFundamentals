@@ -5,26 +5,21 @@ import java.util.Scanner;
 public class Grades {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        double grade = Double.parseDouble(scanner.nextLine());
-
-        printGrade(grade);
+        printGrade(Double.parseDouble(scanner.nextLine()));
     }
 
     private static void printGrade(double grade) {
-        String gradeInWords = "Fail";
-
-        if (grade >= 3 && grade < 3.5) {
-            gradeInWords = "Poor";
+        if (grade < 3) {
+            System.out.println("Fail");
+        } else if (grade >= 3 && grade < 3.5) {
+            System.out.println("Poor");
         } else if (grade >= 3.5 && grade < 4.5) {
-            gradeInWords = "Good";
+            System.out.println("Good");
         } else if (grade >= 4.5 && grade < 5.5) {
-            gradeInWords = "Very good";
-        } else if (grade >= 5.5 && grade <= 6) {
-            gradeInWords = "Excellent";
+            System.out.println("Very good");
+        } else {
+            System.out.println("Excellent");
         }
-        System.out.println(gradeInWords);
-
     }
 
 }
