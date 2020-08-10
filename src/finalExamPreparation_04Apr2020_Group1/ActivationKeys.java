@@ -2,6 +2,7 @@ package finalExamPreparation_04Apr2020_Group1;
 
 import java.util.Scanner;
 
+// 85/100
 public class ActivationKeys {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
