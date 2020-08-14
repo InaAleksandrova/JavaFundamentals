@@ -1,4 +1,4 @@
-package finalExamPreparation_07Dec2019;
+package finalExamPreparation_07Dec2019_Group2;
 
 import java.util.*;
 
@@ -49,7 +49,7 @@ public class Meals {
                     }
                 })
                 .forEach(entry ->
-                        System.out.print(String.format("%s: %s%n", entry.getKey(), entry.getValue().toString().replaceAll("[\\[\\]]", "")))
+                        System.out.printf("%s: %s%n", entry.getKey(), entry.getValue().toString().replaceAll("[\\[\\]]", ""))
                 );
 
         System.out.println("Unliked meals: " + count);

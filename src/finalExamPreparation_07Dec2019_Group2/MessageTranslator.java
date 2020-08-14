@@ -1,4 +1,4 @@
-package finalExamPreparation_07Dec2019;
+package finalExamPreparation_07Dec2019_Group2;
 
 import java.util.*;
 import java.util.regex.Matcher;
